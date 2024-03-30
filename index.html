@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎁 Sorteador de amigo secreto 🎁</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sorteador de amigo secreto 🎁</h1>
+
+        <form action="#" method="post">
+            <label for="nomeAmigo">Nome do Amigo:</label>
+            <br>
+            <input type="text" id="nomeAmigo">
+            <br>
+            <button onclick="incluirParticipanteNaLista(event)">Incluir</button>
+            <button onclick="sortearAmigos(event)">Sortear</button>
+            <button>Recomeçar</button>
+        </form>
+
+        <div>
+            <h2>Participantes</h2>
+            <div id="listaDeParticipantes">
+            </div>
+        </div>
+
+
+        <div>
+            <h2>Amigos secretos</h2>
+            <div>
+                <p id="amigosSecretos"></p>
+            </div>
+        </div>
+
+        <script src="app.js" defer></script>
+    </div>
+</body>
+
+</html>
